@@ -20,7 +20,6 @@ function NavLinkExpanded({ title, items }: NavLinkExpandedProps) {
         )}
       >
         {title}
-        <ChevronRightIcon className={clsx('h-3 w-3')} />
       </div>
       <ul className={clsx('flex items-center')}>
         {items.map((item, idx) => (

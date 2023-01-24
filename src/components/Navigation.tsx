@@ -3,7 +3,6 @@ import clsx from 'clsx';
 import {FigmaIcon, GitHubIcon, TwitterIcon} from '@/components/Icons';
 import NavIcon from '@/components/navigations/NavIcon';
 import NavIconTheme from '@/components/navigations/NavIconTheme';
-import NavLink from '@/components/navigations/NavLink';
 import NavLinkDropdown from '@/components/navigations/NavLinkDropdown';
 import NavLinkExpanded from '@/components/navigations/NavLinkExpanded';
 import NavLogo from '@/components/navigations/NavLogo';
@@ -11,10 +10,7 @@ import NavLogo from '@/components/navigations/NavLogo';
 import useOnScroll from '@/hooks/useOnScroll';
 
 const workLinks = [
-    {title: 'Skills & Tools', href: '/work/skills-and-tools'},
-    {title: 'Experience', href: '/work/experience'},
-    {title: 'Studio', href: '/work/studio'},
-    {title: 'Contact', href: '/work/contact'},
+    {title: 'Post', href: '/work/skills-and-tools'}
 ];
 
 function Navbar() {
@@ -44,15 +40,6 @@ function Navbar() {
                         <nav className={clsx('flex', 'md:gap-2')} data-accent="violet">
                             <NavLogo href="/" title="Home"/>
                             <ul className={clsx('flex items-center', 'md:gap-1')}>
-                                {/*<li>*/}
-                                {/*    <NavLink title="Projects" href="/projects"/>*/}
-                                {/*</li>*/}
-                                {/*<li>*/}
-                                {/*    <NavLink title="Blog" href="/blog"/>*/}
-                                {/*</li>*/}
-                                {/*<li>*/}
-                                {/*    <NavLink title="T.I.L" href="/today-i-learned"/>*/}
-                                {/*</li>*/}
                                 <li className={clsx('lg:hidden')} data-accent="blue">
                                     <NavLinkDropdown title="Work" items={workLinks}/>
                                 </li>
@@ -62,29 +49,22 @@ function Navbar() {
                             </ul>
                         </nav>
                         <ul className={clsx('flex items-center gap-2')}>
-                            <li className={clsx('-mr-1 hidden', 'sm:block')}>
+                            <li className={clsx('sm:block')}>
                                 <NavIcon
-                                    href="https://figma.com/@enjidev"
-                                    icon={<FigmaIcon className={clsx('h-5 w-5')}/>}
-                                    title="Figma"
-                                />
-                            </li>
-                            <li className={clsx('hidden', 'sm:block')}>
-                                <NavIcon
-                                    href="https://github.com/enjidev"
-                                    icon={<GitHubIcon className={clsx('h-5 w-5')}/>}
-                                    title="GitHub"
-                                />
-                            </li>
-                            <li className={clsx('hidden', 'sm:block')}>
-                                <NavIcon
-                                    href="https://twitter.com/enjidev"
+                                    href="https://twitter.com/rfkokt"
                                     icon={<TwitterIcon className={clsx('h-5 w-5')}/>}
                                     title="Twitter"
-                                    label="enjidev"
                                 />
                             </li>
-                            <li className={clsx('hidden', 'sm:block')}>
+                            <li className={clsx('sm:block')}>
+                                <NavIcon
+                                    href="https://github.com/rfkokt"
+                                    icon={<GitHubIcon className={clsx('h-5 w-5')}/>}
+                                    title="GitHub"
+                                    label="rfkokt"
+                                />
+                            </li>
+                            <li className={clsx( 'sm:block')}>
                                 <div
                                     className={clsx(
                                         'h-3 w-[1px] bg-slate-200',
