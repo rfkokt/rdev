@@ -1,17 +1,15 @@
 import Footer from '@/components/Footer';
 import Navigation from '@/components/Navigation';
-
 import type {PropsWithChildren} from 'react';
-import clsx from "clsx";
+import Header from "@/contents/index/Header";
 
 function WithNavigationFooter({children}: PropsWithChildren) {
     return (
         <>
             <Navigation/>
             <main>
-                <div className={clsx("content-wrapper")}>
-                    {children}
-                </div>
+                <Header/>
+                {children}
             </main>
             <Footer/>
         </>

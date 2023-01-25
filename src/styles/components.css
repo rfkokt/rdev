@@ -53,9 +53,9 @@
   @apply md:rounded-xl;
 
 &--solid {
-   @apply bg-accent-600 text-white;
-   @apply hover:bg-accent-700;
-   @apply dark:bg-accent-600 dark:hover:bg-accent-500;
+   @apply bg-rdev-blue-600 text-white;
+   @apply hover:bg-rdev-blue-400;
+   @apply dark:bg-rdev-blue-600 dark:hover:bg-rdev-blue-500;
  }
 
 &--ghost {

@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-import {FigmaIcon, GitHubIcon, TwitterIcon} from '@/components/Icons';
+import {GitHubIcon, TwitterIcon} from '@/components/Icons';
 import NavIcon from '@/components/navigations/NavIcon';
 import NavIconTheme from '@/components/navigations/NavIconTheme';
 import NavLinkDropdown from '@/components/navigations/NavLinkDropdown';
@@ -33,8 +33,7 @@ function Navbar() {
                 <div className={clsx('content-wrapper-max')}>
                     <div
                         className={clsx(
-                            'relative z-50 flex h-16 items-center justify-between px-2 text-sm',
-                            'md:px-4'
+                            'relative z-50 flex h-16 items-center justify-between text-sm',
                         )}
                     >
                         <nav className={clsx('flex', 'md:gap-2')} data-accent="violet">
