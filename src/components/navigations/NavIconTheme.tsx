@@ -15,7 +15,7 @@ function NavIconTheme() {
     controls
       // stage 1 - scale, opaque the transition.
       .start({
-        backgroundColor: isDark ? '#ffffff' : '#0f172a', // white : bg-slate-900
+        backgroundColor: isDark ? '#ffffff' : '#0d1117', // white : bg-slate-900
         scale: [0, 120],
         opacity: 1,
       })

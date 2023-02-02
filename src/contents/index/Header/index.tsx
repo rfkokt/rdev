@@ -10,7 +10,7 @@ function Header() {
             )}
         >
             <div className={clsx("content-wrapper")}>
-                <div className={clsx('relative flex flex-col items-center')}>
+                <div className={clsx('relative flex flex-col')}>
                     <div className={clsx('relative z-10')}>
                         <HeaderTitle/>
                     </div>

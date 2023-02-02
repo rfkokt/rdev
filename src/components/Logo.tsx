@@ -11,7 +11,7 @@ function Logo({ active = false }: LogoProps) {
         <span className={clsx('text-slate-900', 'dark:text-slate-200')}>
           r
         </span>
-        <span className={clsx('text-rdev-blue-500', 'dark:text-rdev-blue-500')}>
+        <span className={clsx('text-rdev-blue-600', 'dark:text-rdev-blue-500')}>
           Dev
         </span>
       </div>

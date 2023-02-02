@@ -16,7 +16,7 @@ module.exports = {
                 mono: ['var(--font-mono, "")', ...defaultTheme.fontFamily.mono],
             },
             colors: {
-                rdark:"#0F172A",
+                rdark:"#0d1117",
                 rdev: {
                     blue: {
                         400: "#4B56D2",

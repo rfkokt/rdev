@@ -1,10 +1,11 @@
 import clsx from "clsx";
+import RepoApps from "@/contents/index/RepoApps";
 
 function IndexContents() {
     return (
-        <div className={clsx('content-wrapper')}>
-            <h1>Haii</h1>
-        </div>
+            <div className={clsx('hidden', 'lg:-mt-12 lg:mb-24 lg:block')}>
+                <RepoApps />
+            </div>
     )
 }
 

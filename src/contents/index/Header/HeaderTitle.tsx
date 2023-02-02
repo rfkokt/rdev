@@ -69,7 +69,7 @@ function HeaderTitle() {
             transition={{delay: 0.2}}
         >
           I&apos;m{' '}
-            <strong className={clsx('text-rdev-blue-500', 'dark:text-rdev-blue-500')}>
+            <strong className={clsx('text-rdev-blue-600', 'dark:text-rdev-blue-500')}>
             Rifki
           </strong>{' '}
             Okta,{' '}

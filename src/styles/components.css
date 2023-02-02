@@ -12,7 +12,7 @@
 
   .background-grid {
     @apply relative z-0 bg-slate-100;
-    @apply dark:bg-[#0c1222];
+    @apply dark:bg-[#161b22];
 
 &::before {
    @apply bg-grid-slate-200/80 absolute inset-0 z-[-1] content-[''];
@@ -23,7 +23,7 @@
 
 &--fade-in {
    @apply bg-transparent bg-gradient-to-t from-slate-100 via-slate-100;
-   @apply dark:bg-transparent dark:from-[#0c1222] dark:via-[#0c1222];
+   @apply dark:bg-transparent dark:from-[#161b22] dark:via-[#161b22];
 
 &::before {
    @apply bg-left-bottom;
@@ -34,7 +34,7 @@
 
 &--fade-out {
    @apply bg-transparent bg-gradient-to-b from-slate-100 via-slate-100;
-   @apply dark:bg-transparent dark:from-[#0c1222] dark:via-[#0c1222];
+   @apply dark:bg-transparent dark:from-[#161b22] dark:via-[#161b22];
 
 &::before {
    mask-image: linear-gradient(black, black, transparent);
@@ -71,8 +71,8 @@
  }
 
 &--soft {
-   @apply bg-accent-600/[0.08] text-accent-600 rounded-full px-5 font-bold;
-   @apply dark:bg-accent-400/10 dark:text-accent-400 dark:font-semibold;
+   @apply bg-accent-600/[0.08] text-rdev-blue-600 rounded-full px-5 font-bold;
+   @apply dark:bg-accent-400/10 dark:text-rdev-blue-500 dark:font-semibold;
  }
 
 &--big {
@@ -96,8 +96,8 @@
 }
 
 .nav-link {
-  @apply text-accent-600 flex h-9 items-center gap-1 rounded-xl px-2 text-[13px] font-bold;
-  @apply dark:text-accent-400 dark:font-semibold;
+  @apply text-rdev-blue-600 flex h-9 items-center gap-1 rounded-xl px-2 text-[13px] font-bold;
+  @apply dark:text-rdev-blue-500 dark:font-semibold;
 
 &:hover,
 &[aria-expanded='true'] {
@@ -156,14 +156,14 @@ li {
  }
 
 &--active {
-   @apply text-accent-600 hover:text-accent-700;
-   @apply dark:text-accent-400 dark:hover:text-accent-300;
+   @apply text-rdev-blue-600 hover:text-accent-700;
+   @apply dark:text-rdev-blue-500 dark:hover:text-accent-300;
  }
 }
 
 .link {
-  @apply text-accent-600 relative inline-flex items-center gap-1;
-  @apply dark:text-accent-400;
+  @apply text-rdev-blue-600 relative inline-flex items-center gap-1;
+  @apply dark:text-rdev-blue-500;
 
 svg {
   @apply h-3.5 w-3.5;

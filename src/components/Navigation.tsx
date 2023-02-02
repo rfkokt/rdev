@@ -26,7 +26,7 @@ function Navbar() {
                 <div
                     className={clsx(
                         'border-divider-light pointer-events-none fixed top-0 left-0 right-0 h-16 border-b bg-white/70 backdrop-blur transition',
-                        'dark:border-divider-dark dark:bg-slate-900/80',
+                        'dark:border-divider-dark dark:bg-rdark/50',
                         [isScrolled ? 'translate-y-0 opacity-100' : 'translate-y-2 opacity-0']
                     )}
                 />
