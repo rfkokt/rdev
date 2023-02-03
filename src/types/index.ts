@@ -1,3 +1,4 @@
 export type TRepoRes = {
-    data: []
+    data: [],
+    res:[],
 }

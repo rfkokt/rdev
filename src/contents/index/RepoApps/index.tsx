@@ -5,13 +5,13 @@ import TodoItem from "@/contents/index/Cards/TodoItem";
 import {getRepo} from "@/helpers/api";
 import {useEffect, useState} from "react";
 import Link from "next/link";
+import {TRepoRes} from "@/types";
 
 function RepoApps() {
-    const [dataRep, setDataRep] = useState([])
+    const [dataRep, setDataRep] = useState<TRepoRes[]>([])
     useEffect(() => {
         // @ts-ignore
-        getRepo().then((res) => {
-            // @ts-ignore
+        getRepo().then((res: a) => {
             res.length = 4
             setDataRep(res)
         })
