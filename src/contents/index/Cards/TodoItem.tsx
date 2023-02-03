@@ -2,7 +2,6 @@ import clsx from 'clsx';
 import moment from 'moment'
 import {CalendarIcon} from '@/components/Icons';
 import Link from "next/link";
-import * as url from "url";
 
 interface TodoItemProps {
     title?: string;
@@ -10,7 +9,7 @@ interface TodoItemProps {
     date?: string;
     tag1?: string;
     tag2?: string;
-    link?: string;
+    href: string;
 }
 
 function TodoItem({
@@ -19,12 +18,11 @@ function TodoItem({
                       date,
                       tag1,
                       tag2,
-                      link
+                      href
                   }: TodoItemProps) {
     return (
 
             <Link
-                href={link}
                 target={"_blank"}
                 className={clsx(
                     ' w-full border p-6',
@@ -37,6 +35,7 @@ function TodoItem({
                         'dark:border-divider-dark dark:bg-slate-900',
                     ]
                 )}
+                href={href}
                 role="presentation"
             >
                 <div
