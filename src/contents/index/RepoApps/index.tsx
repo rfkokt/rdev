@@ -27,7 +27,7 @@ function RepoApps() {
                 >
                     {dataRep.map((item, index) => (
                         <TodoItem key={index} title={item?.name} description={item?.description} tag1={item?.language}
-                                  date={item?.created_at} link={item?.svn_url}/>
+                                  date={item?.created_at} href={item?.svn_url}/>
                     ))}
                     <Link href={'/work/skills-and-tools'} className={clsx(
                         'rounded-xl py-2 text-xl text-rdev-blue-600',

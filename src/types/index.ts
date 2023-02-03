@@ -1,4 +1,10 @@
 export type TRepoRes = {
-    data: [],
-    res:[],
+    name? : string,
+    description? :string,
+    created_at? : string,
+    language?: string,
+    svn_url:string,
+
+
+
 }
