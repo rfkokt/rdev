@@ -10,7 +10,7 @@ interface TodoItemProps {
     date?: string;
     tag1?: string;
     tag2?: string;
-    link?: URL;
+    link?: string;
 }
 
 function TodoItem({
