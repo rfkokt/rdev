@@ -3,7 +3,7 @@ import RepoApps from "@/contents/index/RepoApps";
 
 function IndexContents() {
     return (
-            <div className={clsx('hidden', 'lg:-mt-12 lg:mb-24 lg:block')}>
+            <div className={clsx( 'lg:-mt-12 lg:mb-24')}>
                 <RepoApps />
             </div>
     )

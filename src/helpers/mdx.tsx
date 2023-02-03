@@ -1,3 +1,4 @@
+// @ts-ignore
 import slug from 'slug';
 
 import { NpmIcon, PnpmIcon, YarnIcon } from '@/components/Icons';
