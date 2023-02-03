@@ -50,19 +50,19 @@ function Code({
   const codeRef = useRef<HTMLPreElement>(null);
   const [isCopied, setCopied] = useState<boolean>(false);
 
-  const copyToClipboard = async () => {
-    try {
-      const content = codeRef.current.textContent || '';
-      await navigator.clipboard.writeText(content);
-
-      if (!isCopied) {
-        setCopied(true);
-        setTimeout(() => setCopied(false), 1000);
-      }
-    } catch (err) {
-      setCopied(false);
-    }
-  };
+  // const copyToClipboard = async () => {
+  //   try {
+  //     const content = codeRef.current.textContent || '';
+  //     await navigator.clipboard.writeText(content);
+  //
+  //     if (!isCopied) {
+  //       setCopied(true);
+  //       setTimeout(() => setCopied(false), 1000);
+  //     }
+  //   } catch (err) {
+  //     setCopied(false);
+  //   }
+  // };
 
   return (
     <div className={clsx('mdx-code')}>
@@ -70,7 +70,7 @@ function Code({
         <button
           type="button"
           className={clsx('mdx-code__copy-button')}
-          onClick={copyToClipboard}
+          // onClick={copyToClipboard}
           title="Copy to Clipboard"
           aria-label="Copy to Clipboard"
         >
